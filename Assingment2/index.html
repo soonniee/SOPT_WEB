@@ -13,9 +13,13 @@
     </header>
     <main>
         <div class="clock">
-            <div class="clock__analog"></div>
+            <div class="clock__analog">
+                <div class="analog__hour"></div>
+                <div class="analog__minute"></div>
+                <div class="analog__second"></div>
+            </div>
             <div class="clock__digital">
-                <div class="digital__time"></div>
+                <span class="digital__time"></span>
                 <button class="digital__btn"></button>
             </div>
         </div>
@@ -24,11 +28,20 @@
             <div class="weather__main">
                 <div class="weather__img"></div>
                 <div class="weather__info">
-                    <div class="info__temp"></div>
-                    <div class="info__weather"></div>
+                    <div class="info__row">
+                        <span class="info__place"></span>
+                        <span class="info__temp"></span>
+                    </div>
+                    <div class="info__row">
+                        <span class="info__main"></span>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="weather__detail"></div>
+            <div class="weather__detail">
+                <div class="detail__temp"></div>
+                <div class="detail__weather"></div>
+            </div>
         </div>
     </main>
     <script src="clock.js"></script>
