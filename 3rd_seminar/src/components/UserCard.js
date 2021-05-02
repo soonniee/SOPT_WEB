@@ -1,7 +1,7 @@
 import React from "react";
 
-const UserCard = ({userData})=>{
-    return(
+const UserCard = ({ userData }) => {
+    return (
         userData ? (
             <div className="profile">
                 <img className="profile__img" src={userData.avatar_url} alt=""></img>
@@ -13,14 +13,16 @@ const UserCard = ({userData})=>{
                 <a className="profile__link" href={userData.html_url} alt="" target="_blank">Visit Github</a>
                 <div className="profile__detail">
                     <div className="detail__followers">Followers
-                        <div></div>
+                        <div>{userData.followers}</div>
                     </div>
-                    <div className="detail__followings">Following</div>
-                    <div className="detail__repos">Repos</div>
+                    <div className="detail__followings">Following
+                    <div>{userData.following}</div></div>
+                    <div className="detail__repos">Repos
+                    <div>{userData.public_repos}</div></div>
                 </div>
             </div>
-        ): <div>Loading...</div>
-        
+        ) : <div>Loading...</div>
+
     );
 };
 
