@@ -13,10 +13,13 @@ function App() {
     <Calendar />
     <Title />
     <BrowserRouter>
-      <Route exact path="/" component={Main} />
-      <Route path="/diary/:id" component={Diary} />
-      <Route component={() => <div>PAGE NOT FOUND!!</div>} />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/diary/:id" component={Diary} />
+        <Route component={() => <div>PAGE NOT FOUND!!</div>} />
+      </Switch>
     </BrowserRouter>
+
   </>;
 }
 
