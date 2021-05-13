@@ -1,10 +1,22 @@
 import React from 'react';
+import Styled from 'styled-components';
 
+const FooterWrap = Styled.div`
+  .footer {
+    height: 91px;
+    color: #CEA0E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 const Footer = () => {
     return (
-        <div>
-
+        <FooterWrap>
+            <div className="footer">
+                Copyright&copy; 2021. Soonniee. All rights Reserved.
         </div>
+        </FooterWrap>
     );
 };
 
